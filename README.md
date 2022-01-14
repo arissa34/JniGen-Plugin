@@ -27,7 +27,7 @@ Any help is welcome.
   Download the [latest release](https://github.com/arissa34/JNIGEN_PLUGIN/releases/latest) and install it manually using
   <kbd>Settings/Preferences</kbd> > <kbd>Plugins</kbd> > <kbd>⚙️</kbd> > <kbd>Install plugin from disk...</kbd>
 
-
+[Changelog](CHANGELOG.md#section)
 ---
 Plugin based on the [IntelliJ Platform Plugin Template][template].
 
