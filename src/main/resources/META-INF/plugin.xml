@@ -1,18 +1,23 @@
 <!-- Plugin Configuration File. Read more: https://plugins.jetbrains.com/docs/intellij/plugin-configuration-file.html -->
 <idea-plugin>
     <id>com.github.arissa34.jnigenplugin</id>
-    <name>JNIGEN_PLUGIN</name>
-    <vendor>arissa34</vendor>
-
+    <name>JniGen Highlighter</name>
+    <vendor email="rami.34000@@gmail.com" >arissa34</vendor>
     <depends>com.intellij.modules.platform</depends>
 
     <extensions defaultExtensionNs="com.intellij">
-        <applicationService serviceImplementation="com.github.arissa34.jnigenplugin.services.MyApplicationService"/>
+        <annotator language="JAVA"
+                   implementationClass="com.github.arissa34.jnigenplugin.annotator.JniGenJavaAnnotator"/>
+         <applicationService serviceImplementation="com.github.arissa34.jnigenplugin.services.MyApplicationService"/>
         <projectService serviceImplementation="com.github.arissa34.jnigenplugin.services.MyProjectService"/>
+        <additionalTextAttributes scheme="Default" file="colorSchemes/highlightTokens.xml"/>
+        <additionalTextAttributes scheme="Darcula" file="colorSchemes/highlightTokens.xml"/>
+        <colorSettingsPage implementation="com.github.arissa34.jnigenplugin.settings.JniGenColorSettings"/>
     </extensions>
 
     <applicationListeners>
         <listener class="com.github.arissa34.jnigenplugin.listeners.MyProjectManagerListener"
                   topic="com.intellij.openapi.project.ProjectManagerListener"/>
     </applicationListeners>
+
 </idea-plugin>

@@ -1,1 +1,1 @@
-rootProject.name = "JNIGEN_PLUGIN"
+rootProject.name = "JniGen-Highlighter"

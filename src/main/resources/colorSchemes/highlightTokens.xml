@@ -1,0 +1,63 @@
+<?xml version='1.0'?>
+<list>
+    <option name="JNIGEN_COMMENT">
+        <value>
+            <option name="FOREGROUND" value="abb2bf"/>
+        </value>
+    </option>
+    <option name="DEFAULT_JNI">
+        <value>
+            <option name="FOREGROUND" value="abb2bf"/>
+        </value>
+    </option>
+    <option name="CPP_JNI">
+        <value>
+            <option name="FOREGROUND" value="00BCD4"/>
+        </value>
+    </option>
+    <option name="INCLUDE_JNI">
+        <value>
+            <option name="FOREGROUND" value="dc6a73"/>
+        </value>
+    </option>
+    <option name="HEADER_JNI">
+        <value>
+            <option name="FOREGROUND" value="7986CB"/>
+        </value>
+    </option>
+    <option name="VARIABLE_JNI">
+        <value>
+            <option name="FOREGROUND" value="bf74d5"/>
+        </value>
+    </option>
+    <option name="FUNCTION_JNI">
+        <value>
+            <option name="FOREGROUND" value="bf74d5"/>
+        </value>
+    </option>
+    <option name="CONDITION_JNI">
+        <value>
+            <option name="FOREGROUND" value="bf74d5"/>
+        </value>
+    </option>
+    <option name="OBJECT_JNI">
+        <value>
+            <option name="FOREGROUND" value="bf74d5"/>
+        </value>
+    </option>
+    <option name="STRING_JNI">
+        <value>
+            <option name="FOREGROUND" value="97c278"/>
+        </value>
+    </option>
+    <option name="NUMBER_JNI">
+        <value>
+            <option name="FOREGROUND" value="ce9865"/>
+        </value>
+    </option>
+    <option name="COMMENT_JNI">
+        <value>
+            <option name="FOREGROUND" value="6D6D6D"/>
+        </value>
+    </option>
+</list>
