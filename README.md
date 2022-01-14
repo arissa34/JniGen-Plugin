@@ -4,6 +4,8 @@
 [![Version](https://img.shields.io/jetbrains/plugin/v/18414-jnigen-highlighter.svg)](https://plugins.jetbrains.com/plugin/18414-jnigen-highlighter)
 [![Downloads](https://img.shields.io/jetbrains/plugin/d/18414-jnigen-highlighter.svg)](https://plugins.jetbrains.com/plugin/18414-jnigen-highlighter)
 
+![before_after](https://github.com/arissa34/JniGen-Plugin/blob/main/screens/JniGen_Screen.png?raw=true)
+
 <!-- Plugin description -->
 JniGen is a good tool but the code has the ability to make my eyes bleed :)
 That's why I decided to write this c/c++ highlighter for JniGen.
