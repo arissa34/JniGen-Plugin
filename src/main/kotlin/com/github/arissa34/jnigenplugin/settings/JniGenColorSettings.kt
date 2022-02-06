@@ -18,11 +18,11 @@ class JniGenColorSettings : ColorSettingsPage {
         AttributesDescriptor("Object", OBJECT_JNI),
         AttributesDescriptor("String", STRING_JNI),
         AttributesDescriptor("Number", NUMBER_JNI),
-        AttributesDescriptor("Comment", COMMENT_JNI),
         AttributesDescriptor("Default jni function", DEFAULT_JNI),
         AttributesDescriptor("Function", FUNCTION_JNI),
         AttributesDescriptor("Variables", VARIABLE_JNI),
-        AttributesDescriptor("Condition", CONDITION_JNI)
+        AttributesDescriptor("Condition", CONDITION_JNI),
+        AttributesDescriptor("Comment", COMMENT_JNI)
     )
 
     override fun getAttributeDescriptors(): Array<AttributesDescriptor> = DESCRIPTORS

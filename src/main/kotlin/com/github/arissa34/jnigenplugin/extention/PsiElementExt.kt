@@ -20,29 +20,13 @@ fun PsiElement.isPlainTextHighlight(): Boolean = this is PsiPlainText
 fun PsiElement.isCommentType(): Boolean = this is PsiComment
 
 fun PsiElement.isNativeJniFunctionComment(): Boolean {
-    if (!this.javaClass.simpleName.contains("PsiMethod")) return false
-    var isNativeFunction = false
-    var hasComment = false
-    for (children in this.children) {
-        if (children.javaClass.simpleName.contains("PsiModifierList") && children.text.contains("static native")) {
-            isNativeFunction = true
-        }
-        if (isNativeFunction && children.javaClass.simpleName.contains("PsiComment") && children.text.contains("/*\n")) {
-            return true
-        }
-    }
-    return isNativeFunction && hasComment
-}
+    if (this.javaClass.simpleName.contains("PsiComment")) {
+        var isNativeFunction = false
 
-fun PsiElement.getCommentText(): PsiElement? {
-    var isNativeFunction = false
-    for (children in this.children) {
-        if (children.javaClass.simpleName.contains("PsiModifierList") && children.text.contains("static native")) {
-            isNativeFunction = true
+        this.parent?.let {
+            isNativeFunction = it.text.contains("native")
         }
-        if (isNativeFunction && children.javaClass.simpleName.contains("PsiComment") && children.text.contains("/*\n")) {
-            return children
-        }
+        return isNativeFunction
     }
-    return null
+    return false
 }
