@@ -7,6 +7,11 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+## [0.0.2] - 2022-02-06
+### Added
+- Fix issue on parsing native function
+- Improve parsing
+
 ## [0.0.1] - 2022-01-15
 ### Added
 - Initial scaffold created from [IntelliJ Platform Plugin Template](https://github.com/JetBrains/intellij-platform-plugin-template)
@@ -14,4 +19,5 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - C/C++ code annotator
 - Settings color highlighter
 
+[0.0.2]: https://github.com/arissa34/JniGen-Plugin/releases/tag/v0.0.2
 [0.0.1]: https://github.com/arissa34/JniGen-Plugin/releases/tag/v0.0.1
